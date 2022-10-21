@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.center{
+    background-position: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.logo{
+    padding-top: 6px;
+}
+
+.menu{
+    text-align: right;
+    width: 89%;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: #9a9a9a;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #2f74e0;
+}
+
+.menu .btn-login{
+    background-color: #2f74e0;
+    display: inline-block;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+}
+
+.menu .btn-login:hover{
+    background-color: #001c44;
+    color: white;
+}
+
+
+
+/*SLIDE*/
+
+.slidemenu{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    margin: 30px auto;
+    width: 1024px;
+    height: 301px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 0.4s;
+}
+
+.slide img{
+    width: 1024px;
+    height: 301px;
+    border-radius: 20px;
+}
+
+.manual-navegation{
+    position: absolute;
+    width: 1024px;
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #ffffff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navegation-auto div{
+    border: 2px solid #2f74e0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.navegation-auto{
+    position: absolute;
+    width: 1024px;
+    margin-top: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navegation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navegation-auto .auto-btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navegation-auto .auto-btn4{
+    background-color: white;
+}
+
+/*Section main*/
+
+section.main{
+    background-image:url('../img/fundo.jpg');
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.main_cta{
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.main_cta h2{
+    color: #2f74e0;
+    font-size: 40px;
+}
+
+.main_cta p{
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.main_cta button{
+    background-color: #2f74e0;
+    display: inline-block;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferencial-single{
+    border-radius: 10px ;
+    background-color: white;
+    width: 22%;
+    margin-right: 3%;
+}
+
+.diferencial-single i{
+    color: #2f74e0;
+    font-size: 23px;
+    margin: 10px;
+}
+
+.diferencial-single h2{
+    color: #2f74e0;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+
+.diferencial-single p{
+    color: gray;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+section.sobre{
+    padding: 80px 0;
+}
+
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2{
+    color: #2f74e0;
+}
+
+.chamada-sobre ul li{
+    padding: 5px;
+    text-align: center;
+    list-style-type: circle;
+    list-style-position: inside;
+    background-color: #e9e9e9;
+    color: #575757;
+    font-size: 17px;
+}
+
+.chamada-sobre button{
+    margin: 10px;
+    background-color: #2f74e0;
+    display: inline-block;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section.conquistas{
+    background-color: #eaf2fb;
+    padding: 25px 0;
+    
+}
+.conquista-single{
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color: #2f74e0;
+}
+.conquista-single h2{
+    font-size: 30px ;
+}
+
+/*rodapé*/
+
+footer{
+    background-color: #2f74e0;
+    padding: 50px 0 ;
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer{
+   display: flex;
+   flex-wrap: wrap; 
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li{
+    margin: 10px 0;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: 0.4;
+}
+
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding: 10px;
+}
+.footer-col .midias-sociais{
+    margin-top: 30px;
+}
+
+.footer-col .midias-sociais a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.4s ease;
+}
+
+.footer-col .midias-sociais a i{
+    font-size: 20px;
+}
+
+.footer-col .midias-sociais a:hover{
+    color: #2f74e0;
+    background-color: white;
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #2f74e0;
+}
+
+.footer-col .form-sub input::placeholder{
+    color: white;
+}
+
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #2f74e0;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+}
+@media screen and (max-width:768px){
+    .diferencial-single{
+        width:100%;
+        margin-bottom: 20px;
+    }
+}

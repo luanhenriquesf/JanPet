@@ -1,0 +1,237 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(45deg, rgb(0, 166, 255), rgb(0, 54, 75));
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.center{
+  background-position: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header{
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.logo{
+  padding-top: 6px;
+}
+
+.menu{
+  text-align: right;
+  width: 89%;
+  justify-content: space-between;
+}
+
+.menu a {
+  color: #9a9a9a;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+
+.menu a:hover{
+  color: #2f74e0;
+}
+
+.menu .btn-login{
+  background-color: #2f74e0;
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 6px;
+}
+
+.menu .btn-login:hover{
+  background-color: #001c44;
+  color: white;
+}
+
+
+.wrapper{
+  margin-top: 10%;
+}
+
+.wrapper h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 52px;
+  margin-bottom: 60px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #747474;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: rgb(171, 171, 171);
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team_img img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+footer{
+  background-color: #2f74e0;
+  padding: 50px 0 ;
+}
+
+.container-footer{
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+
+.row-footer{
+ display: flex;
+ flex-wrap: wrap; 
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.footer-col ul{
+  list-style: none;
+}
+
+.footer-col ul li{
+  margin: 10px 0;
+}
+
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: 0.4;
+}
+
+.footer-col ul li a:hover{
+  color: #cecdcd;
+  padding: 10px;
+}
+.footer-col .midias-sociais{
+  margin-top: 30px;
+}
+
+.footer-col .midias-sociais a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.4s ease;
+}
+
+.footer-col .midias-sociais a i{
+  font-size: 20px;
+}
+
+.footer-col .midias-sociais a:hover{
+  color: #2f74e0;
+  background-color: white;
+}
+.footer-col .form-sub input{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  background-color: #2f74e0;
+}
+
+.footer-col .form-sub input::placeholder{
+  color: white;
+}
+
+.footer-col .form-sub button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #2f74e0;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: white;
+}
